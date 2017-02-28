@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-ad-clJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="SLB-HD-7AO"/>
+                                    <constraint firstAttribute="height" constant="60" id="yij-Tf-FaI"/>
+                                </constraints>
+                                <state key="normal" image="Start"/>
+                                <state key="selected" image="Stop"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hov-aF-C1D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s04-pP-JLe">
+                                <state key="normal" title="删除">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUl-NF-LUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLS-qc-HNa">
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bPD-9w-y0b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83N-hM-Soj">
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dla-K4-A96">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cN3-W1-jtr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHX-ec-Nnl">
+                                <state key="normal" title="录音列表">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jumpToList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3S-sH-LDV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.52495218509999997" blue="0.27669755150000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="83N-hM-Soj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="3xt-Nb-l4D"/>
+                            <constraint firstItem="Dla-K4-A96" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="5NZ-Jx-kgD"/>
+                            <constraint firstItem="s04-pP-JLe" firstAttribute="centerY" secondItem="h7C-ad-clJ" secondAttribute="centerY" id="8LI-2a-Dxx"/>
+                            <constraint firstItem="s04-pP-JLe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="8dE-8f-9ak"/>
+                            <constraint firstItem="h7C-ad-clJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8vB-21-MXp"/>
+                            <constraint firstItem="Dla-K4-A96" firstAttribute="top" secondItem="83N-hM-Soj" secondAttribute="bottom" constant="33.5" id="9pe-Jl-FAA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="h7C-ad-clJ" secondAttribute="bottom" constant="100" id="Eof-gg-Ti9"/>
+                            <constraint firstItem="ZLS-qc-HNa" firstAttribute="centerY" secondItem="h7C-ad-clJ" secondAttribute="centerY" id="IAc-zx-Def"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uHX-ec-Nnl" secondAttribute="trailing" constant="11" id="Pfd-Cy-zdJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZLS-qc-HNa" secondAttribute="trailing" constant="30" id="UCk-yN-5VI"/>
+                            <constraint firstItem="h7C-ad-clJ" firstAttribute="leading" secondItem="s04-pP-JLe" secondAttribute="trailing" constant="30" id="ZIF-LW-Zb3"/>
+                            <constraint firstItem="uHX-ec-Nnl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cLD-zy-1Lc"/>
+                            <constraint firstItem="ZLS-qc-HNa" firstAttribute="leading" secondItem="h7C-ad-clJ" secondAttribute="trailing" constant="30" id="dWT-4v-r0E"/>
+                            <constraint firstItem="83N-hM-Soj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXQ-qU-NQS"/>
+                            <constraint firstAttribute="trailing" secondItem="Dla-K4-A96" secondAttribute="trailing" constant="25" id="nKD-Q5-DSk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="s04-pP-JLe" id="GEi-cY-sMh"/>
+                        <outlet property="saveButton" destination="ZLS-qc-HNa" id="L2A-wv-Jpq"/>
+                        <outlet property="timeLabel" destination="83N-hM-Soj" id="zBd-g3-weE"/>
+                        <outlet property="waveBgView" destination="Dla-K4-A96" id="rY9-8I-fVm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Start" width="66" height="66"/>
+        <image name="Stop" width="66" height="66"/>
+    </resources>
+</document>

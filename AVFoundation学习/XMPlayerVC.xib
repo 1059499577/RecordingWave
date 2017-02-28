@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMPlayerVC">
+            <connections>
+                <outlet property="nameLabel" destination="Jzw-dv-gKC" id="WSw-yK-pc1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fag-0B-dVk">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="K18-b4-INL"/>
+                        <constraint firstAttribute="height" constant="60" id="aKD-p4-OgK"/>
+                    </constraints>
+                    <state key="normal" image="Stop"/>
+                    <state key="selected" image="start_02"/>
+                    <connections>
+                        <action selector="playAction:" destination="-1" eventType="touchUpInside" id="HWd-eg-N58"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1b-qo-29P">
+                    <state key="normal" title="返回">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="wAz-iH-nFJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzw-dv-gKC">
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.52495218509999997" blue="0.27669755150000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Fag-0B-dVk" secondAttribute="bottom" constant="82" id="4DM-QF-gT8"/>
+                <constraint firstItem="t1b-qo-29P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="H19-LB-4IQ"/>
+                <constraint firstItem="Fag-0B-dVk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="S87-Gk-gi1"/>
+                <constraint firstItem="t1b-qo-29P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Tzh-nu-3Fm"/>
+                <constraint firstItem="Jzw-dv-gKC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XHU-pd-Jhw"/>
+                <constraint firstItem="Jzw-dv-gKC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xev-Ul-Mpi"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Stop" width="66" height="66"/>
+        <image name="start_02" width="66" height="66"/>
+    </resources>
+</document>
