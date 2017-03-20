@@ -65,13 +65,21 @@
     return dataSource;
 
 }
-- (NSURL *)getNewPathUrl {
+
+- (NSURL *)getNewPathUrlWithName:(NSString *)name {
+    return [NSURL fileURLWithPath:[self getFilePathByName:name]];
+}
+- (NSString *)getFilePathByName:(NSString *)name {
+    NSString *path = [NSString stringWithFormat:@"%@/myRecoder/%@.caf",kDocumentPath,name];
+    return path;
+}
+- (NSString *)getNewName {
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     NSInteger lastNumber = [def integerForKey:@"kLastNumber"];
-    NSString *path = [NSString stringWithFormat:@"%@/myRecoder/第%ld条录音.caf",kDocumentPath,lastNumber + 1];
+    NSString *newName = [NSString stringWithFormat:@"第%ld条录音",lastNumber + 1];
     [def setInteger:lastNumber +1 forKey:@"kLastNumber"];
     [def synchronize];
-    return [NSURL fileURLWithPath:path];
+    return newName;
 }
 - (NSURL *)tempUrl {
     if (!_tempUrl) {

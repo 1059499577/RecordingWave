@@ -10,7 +10,7 @@
 #import "XMPlayerVC.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface XMPlayerVC ()
+@interface XMPlayerVC ()<AVAudioPlayerDelegate>
 
 @property (nonatomic, retain) AVAudioPlayer *player;
 @property (nonatomic, retain) UIImageView *imageVeiw;
@@ -21,15 +21,21 @@
 
 @implementation XMPlayerVC
 
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.player prepareToPlay];
     [self prepareUI];
     [self.player play];
+ 
 }
+
 - (void)prepareUI {
     [self.view addSubview:self.imageVeiw];
-    self.nameLabel.text = self.model.name;
+    self.nameLabel.text = self.sound.name;
     CABasicAnimation *anim = [[CABasicAnimation alloc] init];
     anim.keyPath = @"transform.rotation";
     anim.duration = 10;
@@ -65,10 +71,17 @@
     }];
 }
 
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
 
 - (AVAudioPlayer *)player {
     if (!_player) {
-        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:self.model.filePath] error:nil];
+        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:self.sound.fileFullPath] error:nil];
+        _player.delegate = self;
     }
     return _player;
 }

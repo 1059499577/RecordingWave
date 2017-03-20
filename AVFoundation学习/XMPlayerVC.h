@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XMModel.h"
+#import "XMSound.h"
 
 @interface XMPlayerVC : UIViewController
 
-@property (nonatomic, retain) XMModel *model;
+@property (nonatomic, retain) XMSound *sound;
 
 @end

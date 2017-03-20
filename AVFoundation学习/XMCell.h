@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XMModel.h"
+#import "XMSound.h"
 
 @interface XMCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sizeLabel;
-+ (instancetype)cellWithTableView:(UITableView*)tableView model:(XMModel*)model;
++ (instancetype)cellWithTableView:(UITableView*)tableView model:(XMSound*)sound;
 
 @end

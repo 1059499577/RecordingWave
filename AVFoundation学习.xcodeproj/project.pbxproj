@@ -13,6 +13,9 @@
 		2827B2091E272EAD00842D83 /* XMMeterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827B2081E272EAD00842D83 /* XMMeterTool.m */; };
 		2827B20C1E27316B00842D83 /* XMMeterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827B20B1E27316B00842D83 /* XMMeterModel.m */; };
 		2827B20F1E2732CA00842D83 /* XMMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2827B20E1E2732CA00842D83 /* XMMeterView.m */; };
+		2890B98D1E7A7569000059AC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2890B98C1E7A7569000059AC /* Podfile */; };
+		2890B9921E7A774C000059AC /* XMSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2890B9911E7A774C000059AC /* XMSound.m */; };
+		28BF62E11E7F79BF0024E880 /* XMFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BF62E01E7F79BF0024E880 /* XMFileTool.m */; };
 		28E3C04E1E2358B100F2B347 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E3C04D1E2358B100F2B347 /* main.m */; };
 		28E3C0511E2358B100F2B347 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E3C0501E2358B100F2B347 /* AppDelegate.m */; };
 		28E3C0541E2358B100F2B347 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E3C0531E2358B100F2B347 /* ViewController.m */; };
@@ -28,6 +31,7 @@
 		28F2847D1E2637FD00A94ACD /* XMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F2847B1E2637FD00A94ACD /* XMCell.m */; };
 		28F2847E1E2637FD00A94ACD /* XMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F2847C1E2637FD00A94ACD /* XMCell.xib */; };
 		28F284811E263F0300A94ACD /* XMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F284801E263F0300A94ACD /* XMModel.m */; };
+		AB049825E4FAF8AC65B4BB6B /* libPods-AVFoundation学习.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 381402B834F2330FE8DD42B1 /* libPods-AVFoundation学习.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,22 +52,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2827B2001E271B2400842D83 /* XMPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPlayerVC.h; sourceTree = "<group>"; };
-		2827B2011E271B2400842D83 /* XMPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPlayerVC.m; sourceTree = "<group>"; };
-		2827B2021E271B2400842D83 /* XMPlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMPlayerVC.xib; sourceTree = "<group>"; };
+		2827B2001E271B2400842D83 /* XMPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMPlayerVC.h; path = ../XMPlayerVC.h; sourceTree = "<group>"; };
+		2827B2011E271B2400842D83 /* XMPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMPlayerVC.m; path = ../XMPlayerVC.m; sourceTree = "<group>"; };
+		2827B2021E271B2400842D83 /* XMPlayerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XMPlayerVC.xib; path = ../XMPlayerVC.xib; sourceTree = "<group>"; };
 		2827B2051E271E5600842D83 /* 720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 720.png; sourceTree = "<group>"; };
-		2827B2071E272EAD00842D83 /* XMMeterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMeterTool.h; sourceTree = "<group>"; };
-		2827B2081E272EAD00842D83 /* XMMeterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMeterTool.m; sourceTree = "<group>"; };
-		2827B20A1E27316B00842D83 /* XMMeterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMeterModel.h; sourceTree = "<group>"; };
-		2827B20B1E27316B00842D83 /* XMMeterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMeterModel.m; sourceTree = "<group>"; };
-		2827B20D1E2732CA00842D83 /* XMMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMMeterView.h; sourceTree = "<group>"; };
-		2827B20E1E2732CA00842D83 /* XMMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMMeterView.m; sourceTree = "<group>"; };
+		2827B2071E272EAD00842D83 /* XMMeterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMMeterTool.h; path = ../XMMeterTool.h; sourceTree = "<group>"; };
+		2827B2081E272EAD00842D83 /* XMMeterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMMeterTool.m; path = ../XMMeterTool.m; sourceTree = "<group>"; };
+		2827B20A1E27316B00842D83 /* XMMeterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMMeterModel.h; path = ../XMMeterModel.h; sourceTree = "<group>"; };
+		2827B20B1E27316B00842D83 /* XMMeterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMMeterModel.m; path = ../XMMeterModel.m; sourceTree = "<group>"; };
+		2827B20D1E2732CA00842D83 /* XMMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMMeterView.h; path = ../XMMeterView.h; sourceTree = "<group>"; };
+		2827B20E1E2732CA00842D83 /* XMMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMMeterView.m; path = ../XMMeterView.m; sourceTree = "<group>"; };
+		2890B98C1E7A7569000059AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2890B9901E7A774C000059AC /* XMSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSound.h; sourceTree = "<group>"; };
+		2890B9911E7A774C000059AC /* XMSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSound.m; sourceTree = "<group>"; };
+		28BF62DF1E7F79BF0024E880 /* XMFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFileTool.h; sourceTree = "<group>"; };
+		28BF62E01E7F79BF0024E880 /* XMFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFileTool.m; sourceTree = "<group>"; };
 		28E3C0491E2358B100F2B347 /* AVFoundation学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AVFoundation学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E3C04D1E2358B100F2B347 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28E3C04F1E2358B100F2B347 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28E3C0501E2358B100F2B347 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28E3C0521E2358B100F2B347 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28E3C0531E2358B100F2B347 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28E3C0521E2358B100F2B347 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		28E3C0531E2358B100F2B347 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		28E3C0561E2358B100F2B347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28E3C0581E2358B100F2B347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28E3C05B1E2358B100F2B347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,16 +84,19 @@
 		28E3C0711E2358B100F2B347 /* AVFoundation__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundation__UITests.m; sourceTree = "<group>"; };
 		28E3C0731E2358B100F2B347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E3C0831E23890C00F2B347 /* 720_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 720_1280.png; sourceTree = "<group>"; };
-		28F2846F1E26311100A94ACD /* XMFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMFileManager.h; sourceTree = "<group>"; };
-		28F284701E26311100A94ACD /* XMFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMFileManager.m; sourceTree = "<group>"; };
-		28F284751E26363E00A94ACD /* XMReodeLisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMReodeLisVC.h; sourceTree = "<group>"; };
-		28F284761E26363E00A94ACD /* XMReodeLisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMReodeLisVC.m; sourceTree = "<group>"; };
-		28F284771E26363E00A94ACD /* XMReodeLisVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMReodeLisVC.xib; sourceTree = "<group>"; };
-		28F2847A1E2637FD00A94ACD /* XMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCell.h; sourceTree = "<group>"; };
-		28F2847B1E2637FD00A94ACD /* XMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCell.m; sourceTree = "<group>"; };
-		28F2847C1E2637FD00A94ACD /* XMCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMCell.xib; sourceTree = "<group>"; };
-		28F2847F1E263F0300A94ACD /* XMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMModel.h; sourceTree = "<group>"; };
-		28F284801E263F0300A94ACD /* XMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMModel.m; sourceTree = "<group>"; };
+		28F2846F1E26311100A94ACD /* XMFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMFileManager.h; path = ../XMFileManager.h; sourceTree = "<group>"; };
+		28F284701E26311100A94ACD /* XMFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMFileManager.m; path = ../XMFileManager.m; sourceTree = "<group>"; };
+		28F284751E26363E00A94ACD /* XMReodeLisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMReodeLisVC.h; path = ../XMReodeLisVC.h; sourceTree = "<group>"; };
+		28F284761E26363E00A94ACD /* XMReodeLisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMReodeLisVC.m; path = ../XMReodeLisVC.m; sourceTree = "<group>"; };
+		28F284771E26363E00A94ACD /* XMReodeLisVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XMReodeLisVC.xib; path = ../XMReodeLisVC.xib; sourceTree = "<group>"; };
+		28F2847A1E2637FD00A94ACD /* XMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMCell.h; path = ../XMCell.h; sourceTree = "<group>"; };
+		28F2847B1E2637FD00A94ACD /* XMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMCell.m; path = ../XMCell.m; sourceTree = "<group>"; };
+		28F2847C1E2637FD00A94ACD /* XMCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XMCell.xib; path = ../XMCell.xib; sourceTree = "<group>"; };
+		28F2847F1E263F0300A94ACD /* XMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMModel.h; path = ../XMModel.h; sourceTree = "<group>"; };
+		28F284801E263F0300A94ACD /* XMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMModel.m; path = ../XMModel.m; sourceTree = "<group>"; };
+		381402B834F2330FE8DD42B1 /* libPods-AVFoundation学习.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVFoundation学习.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A05E738422ACBB878866E96 /* Pods-AVFoundation学习.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundation学习.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVFoundation学习/Pods-AVFoundation学习.release.xcconfig"; sourceTree = "<group>"; };
+		F44ABA07CB84C57480FFEC53 /* Pods-AVFoundation学习.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundation学习.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVFoundation学习/Pods-AVFoundation学习.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB049825E4FAF8AC65B4BB6B /* libPods-AVFoundation学习.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,42 +125,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28E3C0401E2358B100F2B347 = {
+		0AE382E5E38EB314C9C09D0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28E3C04B1E2358B100F2B347 /* AVFoundation学习 */,
-				28E3C0651E2358B100F2B347 /* AVFoundation学习Tests */,
-				28E3C0701E2358B100F2B347 /* AVFoundation学习UITests */,
-				28E3C04A1E2358B100F2B347 /* Products */,
+				381402B834F2330FE8DD42B1 /* libPods-AVFoundation学习.a */,
 			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		28E3C04A1E2358B100F2B347 /* Products */ = {
+		2890B98E1E7A75F4000059AC /* Recorder */ = {
 			isa = PBXGroup;
 			children = (
-				28E3C0491E2358B100F2B347 /* AVFoundation学习.app */,
-				28E3C0621E2358B100F2B347 /* AVFoundation学习Tests.xctest */,
-				28E3C06D1E2358B100F2B347 /* AVFoundation学习UITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		28E3C04B1E2358B100F2B347 /* AVFoundation学习 */ = {
-			isa = PBXGroup;
-			children = (
-				2827B2051E271E5600842D83 /* 720.png */,
-				28E3C0831E23890C00F2B347 /* 720_1280.png */,
-				28E3C04F1E2358B100F2B347 /* AppDelegate.h */,
-				28E3C0501E2358B100F2B347 /* AppDelegate.m */,
 				28E3C0521E2358B100F2B347 /* ViewController.h */,
 				28E3C0531E2358B100F2B347 /* ViewController.m */,
 				28E3C0551E2358B100F2B347 /* Main.storyboard */,
-				28E3C0581E2358B100F2B347 /* Assets.xcassets */,
-				28E3C05A1E2358B100F2B347 /* LaunchScreen.storyboard */,
-				28E3C05D1E2358B100F2B347 /* Info.plist */,
-				28E3C04C1E2358B100F2B347 /* Supporting Files */,
-				28F2846F1E26311100A94ACD /* XMFileManager.h */,
-				28F284701E26311100A94ACD /* XMFileManager.m */,
 				28F284751E26363E00A94ACD /* XMReodeLisVC.h */,
 				28F284761E26363E00A94ACD /* XMReodeLisVC.m */,
 				28F284771E26363E00A94ACD /* XMReodeLisVC.xib */,
@@ -165,6 +156,52 @@
 				2827B20B1E27316B00842D83 /* XMMeterModel.m */,
 				2827B20D1E2732CA00842D83 /* XMMeterView.h */,
 				2827B20E1E2732CA00842D83 /* XMMeterView.m */,
+				28F2846F1E26311100A94ACD /* XMFileManager.h */,
+				28F284701E26311100A94ACD /* XMFileManager.m */,
+				28BF62DF1E7F79BF0024E880 /* XMFileTool.h */,
+				28BF62E01E7F79BF0024E880 /* XMFileTool.m */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		2890B98F1E7A76A7000059AC /* RealmTool */ = {
+			isa = PBXGroup;
+			children = (
+				2890B9901E7A774C000059AC /* XMSound.h */,
+				2890B9911E7A774C000059AC /* XMSound.m */,
+			);
+			path = RealmTool;
+			sourceTree = "<group>";
+		};
+		28E3C0401E2358B100F2B347 = {
+			isa = PBXGroup;
+			children = (
+				2890B98C1E7A7569000059AC /* Podfile */,
+				28E3C04B1E2358B100F2B347 /* AVFoundation学习 */,
+				28E3C0651E2358B100F2B347 /* AVFoundation学习Tests */,
+				28E3C0701E2358B100F2B347 /* AVFoundation学习UITests */,
+				28E3C04A1E2358B100F2B347 /* Products */,
+				774CC2463A4B110C0CAA356D /* Pods */,
+				0AE382E5E38EB314C9C09D0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28E3C04A1E2358B100F2B347 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28E3C0491E2358B100F2B347 /* AVFoundation学习.app */,
+				28E3C0621E2358B100F2B347 /* AVFoundation学习Tests.xctest */,
+				28E3C06D1E2358B100F2B347 /* AVFoundation学习UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28E3C04B1E2358B100F2B347 /* AVFoundation学习 */ = {
+			isa = PBXGroup;
+			children = (
+				2890B98F1E7A76A7000059AC /* RealmTool */,
+				2890B98E1E7A75F4000059AC /* Recorder */,
+				28E3C04C1E2358B100F2B347 /* Supporting Files */,
 			);
 			path = "AVFoundation学习";
 			sourceTree = "<group>";
@@ -172,6 +209,13 @@
 		28E3C04C1E2358B100F2B347 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2827B2051E271E5600842D83 /* 720.png */,
+				28E3C0831E23890C00F2B347 /* 720_1280.png */,
+				28E3C04F1E2358B100F2B347 /* AppDelegate.h */,
+				28E3C0501E2358B100F2B347 /* AppDelegate.m */,
+				28E3C0581E2358B100F2B347 /* Assets.xcassets */,
+				28E3C05A1E2358B100F2B347 /* LaunchScreen.storyboard */,
+				28E3C05D1E2358B100F2B347 /* Info.plist */,
 				28E3C04D1E2358B100F2B347 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -195,6 +239,15 @@
 			path = "AVFoundation学习UITests";
 			sourceTree = "<group>";
 		};
+		774CC2463A4B110C0CAA356D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F44ABA07CB84C57480FFEC53 /* Pods-AVFoundation学习.debug.xcconfig */,
+				7A05E738422ACBB878866E96 /* Pods-AVFoundation学习.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E3C0761E2358B100F2B347 /* Build configuration list for PBXNativeTarget "AVFoundation学习" */;
 			buildPhases = (
+				C6DAE3B410A55FF3E22E4956 /* [CP] Check Pods Manifest.lock */,
 				28E3C0451E2358B100F2B347 /* Sources */,
 				28E3C0461E2358B100F2B347 /* Frameworks */,
 				28E3C0471E2358B100F2B347 /* Resources */,
+				3A6AC2687AF809D9CDC83B83 /* [CP] Embed Pods Frameworks */,
+				D22F95392C73EDFE8760BC88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +364,7 @@
 				2827B2061E271E5600842D83 /* 720.png in Resources */,
 				2827B2041E271B2400842D83 /* XMPlayerVC.xib in Resources */,
 				28E3C0591E2358B100F2B347 /* Assets.xcassets in Resources */,
+				2890B98D1E7A7569000059AC /* Podfile in Resources */,
 				28E3C0841E23890C00F2B347 /* 720_1280.png in Resources */,
 				28E3C0571E2358B100F2B347 /* Main.storyboard in Resources */,
 			);
@@ -329,6 +386,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A6AC2687AF809D9CDC83B83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AVFoundation学习/Pods-AVFoundation学习-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DAE3B410A55FF3E22E4956 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D22F95392C73EDFE8760BC88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AVFoundation学习/Pods-AVFoundation学习-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28E3C0451E2358B100F2B347 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -341,9 +446,11 @@
 				28E3C0511E2358B100F2B347 /* AppDelegate.m in Sources */,
 				2827B20F1E2732CA00842D83 /* XMMeterView.m in Sources */,
 				28F2847D1E2637FD00A94ACD /* XMCell.m in Sources */,
+				28BF62E11E7F79BF0024E880 /* XMFileTool.m in Sources */,
 				2827B20C1E27316B00842D83 /* XMMeterModel.m in Sources */,
 				28F284781E26363E00A94ACD /* XMReodeLisVC.m in Sources */,
 				28F284711E26311100A94ACD /* XMFileManager.m in Sources */,
+				2890B9921E7A774C000059AC /* XMSound.m in Sources */,
 				28E3C04E1E2358B100F2B347 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +493,7 @@
 				28E3C0561E2358B100F2B347 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		28E3C05A1E2358B100F2B347 /* LaunchScreen.storyboard */ = {
@@ -489,6 +597,7 @@
 		};
 		28E3C0771E2358B100F2B347 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44ABA07CB84C57480FFEC53 /* Pods-AVFoundation学习.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J56NWSKHS7;
@@ -504,6 +613,7 @@
 		};
 		28E3C0781E2358B100F2B347 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A05E738422ACBB878866E96 /* Pods-AVFoundation学习.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J56NWSKHS7;

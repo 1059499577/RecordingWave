@@ -7,13 +7,14 @@
 //
 
 #import "XMReodeLisVC.h"
-#import "XMFileManager.h"
 #import "XMCell.h"
 #import "XMPlayerVC.h"
+#import "XMFileTool.h"
+#
 
 @interface XMReodeLisVC ()<UITableViewDelegate,UITableViewDataSource>
 {
-    NSArray *_dataSource;
+    NSMutableArray *_dataSource;
 }
 
 @end
@@ -22,8 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _dataSource = [[XMFileManager shareInstance] getLocalList];
-    // Do any additional setup after loading the view from its nib.
+    _dataSource = [[XMFileTool shareInstance] getAllSounds];
 }
 
 - (IBAction)back:(id)sender {
@@ -54,13 +54,32 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    XMModel *model = _dataSource[indexPath.row];
+    XMSound *model = _dataSource[indexPath.row];
     XMPlayerVC *VC = [[XMPlayerVC alloc] init];
-    VC.model = model;
+    VC.sound = model;
     [self presentViewController:VC animated:YES completion:^{
         
     }];
     
 }
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return UITableViewCellEditingStyleDelete;
+}
+-(NSString*)tableView:(UITableView*)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath*)indexpath{
+    return @"删除录音";
+}
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    XMSound *sound = _dataSource[indexPath.row];
+    [[XMFileTool shareInstance] deleteSound:sound];
+    [_dataSource removeObject:sound];
+    [_tableView beginUpdates];
+    [_tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimationLeft)];
+    [_tableView endUpdates];
+    
+}
+
 
 @end

@@ -14,15 +14,15 @@
     [super awakeFromNib];
     // Initialization code
 }
-+ (instancetype)cellWithTableView:(UITableView *)tableView model:(XMModel*)model {
++ (instancetype)cellWithTableView:(UITableView*)tableView model:(XMSound*)sound;{
     XMCell *cell = [tableView dequeueReusableCellWithIdentifier:@"XMCell"];
-    NSLog(@"%@",model);
+    NSLog(@"%@",sound);
     if (!cell) {
         cell =[[[NSBundle mainBundle] loadNibNamed:@"XMCell" owner:self options:nil] lastObject];
     }
-    cell.timeLabel.text = model.time;
-    cell.titleLabel.text = model.name;
-    cell.sizeLabel.text = model.size;
+    cell.timeLabel.text = sound.formateDate;
+    cell.titleLabel.text = sound.name;
+    cell.sizeLabel.text = sound.formatSize;
     return cell;
 }
 

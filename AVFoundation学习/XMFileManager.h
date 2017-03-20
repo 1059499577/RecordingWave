@@ -11,9 +11,10 @@
 @interface XMFileManager : NSObject
 @property (nonatomic, retain) NSURL *tempUrl;
 
-- (NSURL *)getNewPathUrl;
+- (NSURL *)getNewPathUrlWithName:(NSString *)name;
+- (NSString *)getNewName ;
+- (NSString *)getFilePathByName:(NSString *)name;
 - (NSArray *)getLocalList;
-
 
 + (instancetype)shareInstance;
 @end

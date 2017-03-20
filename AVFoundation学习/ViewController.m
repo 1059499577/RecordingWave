@@ -11,11 +11,11 @@
 
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "XMFileManager.h"
 #import "XMReodeLisVC.h"
 #import "XMMeterTool.h"
 #import "XMMeterModel.h"
 #import "XMMeterView.h"
+#import "XMFileTool.h"
 
 @interface ViewController ()
 
@@ -65,11 +65,7 @@
 #pragma mark - Private
 /* 保存当前录音文件 */
 - (void)saveCurrentRecodeData {
-    NSError *error = nil;
-    [[NSFileManager defaultManager] copyItemAtURL:[XMFileManager shareInstance].tempUrl toURL:[[XMFileManager shareInstance] getNewPathUrl]  error:&error];
-    if (error == nil) {
-        [[NSFileManager defaultManager] removeItemAtPath:[XMFileManager shareInstance].tempUrl.path error:nil];
-    }
+    [[XMFileTool shareInstance] saveCurrentSound];
 }
 
 #pragma mark -Actoin Event
@@ -90,8 +86,9 @@
         [self.deleteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self.saveButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_timer invalidate];
-        [self.recoder pause];
+        
         [self stopUpDateMeter];
+        [self.recoder pause];
     }
 }
 
@@ -100,12 +97,16 @@
 }
 
 - (IBAction)deleteAction:(UIButton *)sender {
-    [[NSFileManager defaultManager] removeItemAtPath:[XMFileManager shareInstance].tempUrl.path error:nil];
-    self.recodeTime = 0;
-    [self reloadMeterView];
+    [self.recoder stop];
+   BOOL success = [[XMFileTool shareInstance] deleteCurrentSound];
+    if (success) {
+        self.recodeTime = 0;
+        [self reloadMeterView];
+    }
 }
 
 - (IBAction)saveAction:(id)sender {
+    [self.recoder stop];
     if (self.recodeTime > 1) {
         [self saveCurrentRecodeData];
         self.recodeTime = 0;
@@ -137,7 +138,7 @@
                                   AVEncoderBitDepthHintKey : @16,
                                   AVEncoderAudioQualityKey : @(AVAudioQualityMedium)
                                   };
-        _recoder = [[AVAudioRecorder alloc] initWithURL:[XMFileManager shareInstance].tempUrl settings:setting error:nil];
+        _recoder = [[AVAudioRecorder alloc] initWithURL:[XMFileTool shareInstance].tempUrl settings:setting error:nil];
         _recoder.meteringEnabled = YES;
     }
     return _recoder;
